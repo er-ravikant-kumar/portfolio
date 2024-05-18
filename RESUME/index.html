@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>https://er-ravikant-kumar.github.io/Resume/ </title>
+    </head>
+    <style>
+        
+    
+        .resume{
+                text-align: center;
+                font-size: 40px;
+                color: darkgrey;
+               
+        }
+        .resume:hover{
+            color: purple;
+        }
+        
+        .kumar{
+            font-size: large;
+        }
+        .number{
+            text-decoration: none;
+        }
+        .img{
+            border: 5px  solid white;
+            box-shadow: 2px 2px 20px gray;
+            position: absolute;
+            right: 50px;
+            border-radius: 50px;
+            cursor: pointer;  
+               
+        }
+        
+        .obj{
+            background-color: aqua;
+            color: black;
+           
+        }
+        .obj:hover{
+            background-color: black;
+            color: aqua;
+        }
+        .education{
+            background-color: aqua;
+            color: black;
+        }
+        .education:hover{
+            background-color: black;
+            color: aqua;
+        }
+        .tech{
+            background-color: aqua;
+            color: black;
+        }
+        .tech:hover{
+            background-color: black;
+            color: aqua;
+        }
+        .work{
+            background-color: aqua;
+            color: black;
+        }
+        .work:hover{
+            background-color: black;
+            color: aqua;
+        }
+        .hobbies{
+            background-color: aqua;
+            color: black;
+        }
+        .hobbies:hover{
+            background-color: black;
+            color: aqua;
+        }
+        .personal{
+            background-color: aqua;
+            color: black;
+        }
+        .personal:hover{
+            background-color: black;
+            color: aqua;
+        }
+        button{
+            background-color: black;
+            color: rgb(188, 106, 183);
+            position: absolute;
+            left: 750px;
+            border-radius: 2px;
+            padding: 8px 10px 8px 10px;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px gray;
+        }
+        button:hover{
+            background-color:rgb(188, 106, 183);
+            color: black ;
+            padding: 10px 12px 10px 12px;
+
+        }
+    </style>
+    <body  id="body">
+    
+        <div id="data">
+            <div class="resume">
+                Resume
+             </div>
+           <div >
+            <img src="ravikant photo.jpg" width="95px" height="95px" class="img">
+               <ol class="kumar"> Ravikant kumar</ol>
+               <ol >+91<a href="#" target="_parent"class="number"> 7091254480 </a></ol>
+               <ol >EMAIL ID: <a href="#" target="_parent"> ravikant200522@gmail.com </a></ol>
+            </div>
+            
+          <div>
+              <h2 class="obj">OBJECTIVE</h2>
+              <P>To work with an organization where can learn new skill and increase my abilities for organizational goals as well as myself</P>
+              <h2 class="education">EDUCATIONAL QUALIFICATION</h2>
+              <h4 > Pursuing B.tech 2nd Year</h4>
+              <ul type="">
+                 <li>Bihar Engineering University (GEC BANKA)</li>
+                 <li> Computer Science & Engineering (iot)</li>
+                 <li>Marks 6.9 cgpa</li>
+               </ul> 
+                <h4>passed out 12th from BSEB in 2022</h4>
+              <ul>
+                  <li>marks 72%</li>
+              </ul>
+               <h4>passed out 10th from BSEB in 2020</h4>
+               <ul>
+                  <li> marks 68%</li>
+               </ul>
+                <h2 class="tech"> TECHNICAL SKILL</h2>
+                <ul>
+                  <li>HTML,CSS & JavaScript</li>
+                  <li>C & CYBER SECURITY</li>
+                </ul>
+                <h2 class="work"> WORK EXPERIENCE</h2>
+                <ul><li>FRESHER</li></ul>
+                <h2 class="hobbies">HOBBIES</h2>
+               <ul><li>cricket, football & Trading</li></ul>
+                <h2 class="personal">PERSONAL DETAILS</h2>
+                <p>Name :- Ravikant Kumar</p>
+                <P>Father's Name :- Rupesh Kumar</P>
+                <p>Date of Birth :- 14/01/2005</p>
+                <p>Address :- Village+ post - sorampur , p.s - dulhin bazar , pin no 801102, patna (bihar)</p>
+               <p>Marital Status :- Singal</p>
+          </div>
+        </div>
+        <button onclick="save()">Print Resume</button>
+       
+    </body>
+    <script>
+        function save(){
+            var body=document.getElementById('body').innerHTML;
+            var data=document.getElementById('data').innerHTML;
+            document.getElementById('body').innerHTML=data;
+            window.print();
+        }
+    </script>
+</html>
